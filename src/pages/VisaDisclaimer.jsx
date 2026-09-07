@@ -1,11 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 
 const VisaDisclaimer = () => (
   <>
-    <Navbar />
-    <section className="py-24 bg-bg">
+    <section className="pt-32 pb-24 bg-bg">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold text-navy mb-6">Visa Disclaimer</h1>
 
@@ -29,7 +26,6 @@ const VisaDisclaimer = () => (
         </div>
       </div>
     </section>
-    <Footer />
   </>
 )
 

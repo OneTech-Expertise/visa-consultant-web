@@ -1,11 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 
 const Privacy = () => (
   <>
-    <Navbar />
-    <section className="py-24 bg-bg">
+    <section className="pt-32 pb-24 bg-bg">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl sm:text-5xl font-heading font-bold text-navy mb-6">Privacy Policy</h1>
         <p className="text-muted-text mb-8">Last updated: September 2026</p>
@@ -38,7 +35,6 @@ const Privacy = () => (
         </div>
       </div>
     </section>
-    <Footer />
   </>
 )
 

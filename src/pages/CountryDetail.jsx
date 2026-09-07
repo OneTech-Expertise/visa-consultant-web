@@ -3,8 +3,6 @@ import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, MapPin, CheckCircle, ChevronLeft, Plane, Globe, Users, Award } from 'lucide-react'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import Button from '../components/Button'
 import ProcessSection from '../components/ProcessSection'
 import FAQsSection from '../components/FAQsSection'
@@ -16,17 +14,13 @@ const CountryDetail = () => {
 
   if (!country) {
     return (
-      <>
-        <Navbar />
-        <section className="pt-32 pb-20 bg-bg min-h-screen">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <h1 className="text-4xl font-heading font-bold text-navy mb-4">Country Not Found</h1>
-            <p className="text-muted-text mb-8">The country you're looking for doesn't exist in our destinations.</p>
-            <Button as={Link} to="/countries">View All Countries</Button>
-          </div>
-        </section>
-        <Footer />
-      </>
+      <section className="pt-32 pb-20 bg-bg min-h-screen">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-4xl font-heading font-bold text-navy mb-4">Country Not Found</h1>
+          <p className="text-muted-text mb-8">The country you're looking for doesn't exist in our destinations.</p>
+          <Button as={Link} to="/countries">View All Countries</Button>
+        </div>
+      </section>
     )
   }
 
@@ -39,8 +33,6 @@ const CountryDetail = () => {
 
   return (
     <>
-      <Navbar />
-
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 bg-gradient-to-br from-navy via-navy-light to-navy text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -215,8 +207,6 @@ const CountryDetail = () => {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

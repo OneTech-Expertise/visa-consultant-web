@@ -1,14 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import SectionHeading from '../components/SectionHeading'
 import ServiceCard from '../components/ServiceCard'
-import Footer from '../components/Footer'
 
 const Services = () => {
   return (
     <>
-      <Navbar />
-
       <section id="services" className="py-24 bg-bg">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -27,8 +23,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, CheckCircle, Clock, FileText, Users, Award, Sparkles, ShieldCheck, BookOpen, Plane, Briefcase, Building, Globe, Heart } from 'lucide-react'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Button from '../components/Button'
-import Process from '../components/Process'
-import FAQs from '../components/FAQs'
+import Button from './Button'
+import ProcessSection from './ProcessSection'
+import FAQsSection from './FAQsSection'
 
 const ICONS = {
   GraduationCap: <BookOpen size={24} />,
@@ -24,8 +22,6 @@ const VisaServicePage = ({ service }) => {
 
   return (
     <>
-      <Navbar />
-
       {/* Hero */}
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-navy via-navy-light to-navy text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -164,8 +160,6 @@ const VisaServicePage = ({ service }) => {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

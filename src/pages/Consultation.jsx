@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Calendar, Clock, Video, FileText, CheckCircle, ArrowRight } from 'lucide-react'
 
-import Navbar from '../components/Navbar'
 import SectionHeading from '../components/SectionHeading'
-import Footer from '../components/Footer'
 import Button from '../components/Button'
 
 const Consultation = () => {
@@ -22,8 +20,6 @@ const Consultation = () => {
 
   return (
     <>
-      <Navbar />
-
       <section id="consultation" className="py-24 bg-bg">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -124,8 +120,6 @@ const Consultation = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

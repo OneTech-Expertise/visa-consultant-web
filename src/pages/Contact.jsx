@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Clock, MessageCircle, Facebook, Instagram, Linkedin, Youtube, Send } from 'lucide-react'
 
-import Navbar from '../components/Navbar'
 import SectionHeading from '../components/SectionHeading'
-import Footer from '../components/Footer'
 import Button from '../components/Button'
 import siteConfig from '../data/siteConfig'
 import services from '../data/services'
@@ -29,8 +27,6 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
-
       <section id="contact" className="py-24 bg-bg">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -154,8 +150,6 @@ const Contact = () => {
           </motion.div>
         </div>
       )}
-
-      <Footer />
     </>
   )
 }

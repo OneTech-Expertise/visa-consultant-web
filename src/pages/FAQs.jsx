@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import Navbar from '../components/Navbar'
 import SectionHeading from '../components/SectionHeading'
-import Footer from '../components/Footer'
+import Button from '../components/Button'
 import faqs from '../data/faqs'
 
 const FAQItem = ({ faq, isOpen, onToggle }) => (
@@ -25,7 +25,6 @@ const FAQs = () => {
 
   return (
     <>
-      <Navbar />
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-navy via-navy-light to-navy text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-world-map opacity-20" />
         <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
@@ -54,8 +53,6 @@ const FAQs = () => {
           <Button as={Link} to="/contact" size="lg" className="inline-flex">Contact Us</Button>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

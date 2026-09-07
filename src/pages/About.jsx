@@ -1,15 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import SectionHeading from '../components/SectionHeading'
-import Footer from '../components/Footer'
 import siteConfig from '../data/siteConfig'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
 const About = () => {
   return (
     <>
-      <Navbar />
-
       <section id="about" className="py-24 bg-bg">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -108,8 +104,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

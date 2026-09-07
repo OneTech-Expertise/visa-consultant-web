@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Search, MapPin, ArrowRight, Filter } from 'lucide-react'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import SectionHeading from '../components/SectionHeading'
 import countries from '../data/countries'
 
@@ -22,8 +20,6 @@ const Countries = () => {
 
   return (
     <>
-      <Navbar />
-
       {/* Hero */}
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-navy via-navy-light to-navy text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -135,8 +131,6 @@ const Countries = () => {
           )}
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }
